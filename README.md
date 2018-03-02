@@ -27,7 +27,7 @@ Demo : -
           databinds: ['[{name1}]','[{name3}]'], 
           children: [   
                         {
-                           element:'TN', 
+                           element:'TN', //textnode
                            type:3, 
                             parentname:'UL#list', 
                             attribute:null,
@@ -48,7 +48,7 @@ Demo : -
                                         {
                                           element:'SPAN',
                                           type:1, 
-                                          parentname:'UL#list',
+                                          parentname:'OL.list-me',
                                           attribute:{'id':'list_1','class':"[{o.name}]-item"},
                                           attrbinds: [ 
                                                         {'class':'[{o.name}]'}
@@ -60,7 +60,7 @@ Demo : -
                                        {
                                           element:'SPAN', 
                                           type:1,
-                                          parentname:'UL#list',
+                                          parentname:'OL.list-me',
                                           attribute:{'id':'list_2','class':"[{o.age}]-item"},
                                           attrbinds: [ 
                                                         {'class':'[{o.age}]'}
